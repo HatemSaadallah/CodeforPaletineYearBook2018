@@ -17,5 +17,10 @@ def year_two():
 def year_three():
 	return render_template("y3_page.html")
 
+
+@app.route('/faculty')
+def faculty():
+	return render_template("faculty.html")
+
 if __name__ == '__main__':
 	app.run()
