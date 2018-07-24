@@ -28,7 +28,16 @@
 			width: 90%;
    			margin: 0 auto;
 		}
-
+		.rotate90 {
+		    -webkit-transform: rotate(90deg);
+		    -moz-transform: rotate(90deg);
+		    -o-transform: rotate(90deg);
+		    -ms-transform: rotate(90deg);
+		    transform: rotate(90deg);
+		}
+		.pic{
+			width: 200px;
+		}
 	</style>
 </head>
 	
@@ -39,13 +48,13 @@
 	<div class="container">
 	<h1 class="col-xs-1 text-center head-text">Year 2</h1>
 	<div class="instructors row">
-		<a class="button" href="#popup17"><img class=" rounded" id="erik" src='../static/images/erik.jpg' height="250" width="200" class="rotate180"></a>
+		<a class="button" href="#popup17"><img class="pic rotate90 rounded" id="erik" src='../static/images/erik.jpg' height="250" width="200" class="rotate180"></a>
 		
 		<a class="button" href="#popup18"><img class="rounded" id="michelle " src='http://via.placeholder.com/200x250'></a>
 
 	</div>
 	<div class="hatem row" id="hatem">
-		<a class="button" href="#popup19"><img class="rounded" src="http://via.placeholder.com/200x250"></a>
+		<a class="button" href="#popup19"><img class="pic rounded" src="../static/images/hatem.jpg"></a>
 		
 	</div>
 	<div class="students">
