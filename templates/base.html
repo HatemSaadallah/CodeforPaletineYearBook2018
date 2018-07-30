@@ -3,9 +3,9 @@
 <head>
 	<title> Code for Palestine Yearbook </title>
 	<meta name="description">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../static/homepage.css">
 	<link rel="icon" href="../static/Images/icon.png">
-
 	<style type="text/css">
 		.navbar{
 			width: 50%;
@@ -17,6 +17,12 @@
 
 </style>
 </head>
+<script type="text/javascript">
+	$('#dropdown-toggle').click(function(e){
+   		  e.stopPropagation();
+   		  e.preventDefault();
+		});
+	</script>
 <body>
 
 	<div id="main-header">
@@ -24,10 +30,13 @@
 		<h2 id="main2"> Gaza Summer 2018 </h2>
 	</div>
 
+
+
+
 	<div class="navbar">
 		<a href="/">Home</a>
 		<div class="dropdown">
-			<button class="dropbtn"> Students </button>
+			<button  class="dropbtn" id="dropdown-toggle"> Students </button>
 			<div class="dropdown-content">
 				<a href="/yearOne">Year 1</a>
 				<a href="/yearTwo">Year 2</a>
